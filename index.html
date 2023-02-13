@@ -19,62 +19,45 @@
   </head>
   <body>
     <!-- Header-->
-
     <header class="header">
       <div class="container header__container">
         <nav class="navigation">
-          <a class="logo" href="./index.html"
-            ><span class="logo__item">Web</span>Studio</a
-          >
+          <a class="logo" href="./index.html">
+            <span class="logo__item">Web</span>Studio
+          </a>
 
           <ul class="navigations__list">
-            <li class="navigations__item nav-li">
-              <a
-                class="address-links link-nav main-header-links span-blue padding-32px block"
-                href="./index.html"
+            <li class="navigations__item">
+              <a class="navigations__link selected" href="./index.html"
                 >Студія</a
               >
             </li>
 
-            <li class="nav-li">
-              <a
-                class="address-links link-nav main-header-links padding-32px flex-link"
-                href="./portfolio.html"
-                >Портфоліо</a
-              >
+            <li class="navigations__item">
+              <a class="navigations__link" href="./portfolio.html">Портфоліо</a>
             </li>
 
-            <li class="nav-li">
-              <a
-                class="address-links link-nav main-header-links padding-32px flex-link"
-                href=""
-                >Контакти</a
-              >
+            <li class="navigations__item">
+              <a class="navigations__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
 
         <!--contact menu-->
 
-        <ul class="list-style-none flex-center-items auth-nav">
-          <li class="item">
-            <a
-              class="address-links link-nav email-header main-header-links padding-32px flex-link"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="icon grey-color" width="16" height="12">
+        <ul class="contact">
+          <li class="contact__list">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-email-icon-optimized"></use>
               </svg>
 
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a
-              class="address-links link-nav tel-header main-header-links padding-32px flex-link"
-              href="tel:+380961111111"
-            >
-              <svg class="icon" width="10" height="16">
+          <li class="contact__list">
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smart"></use>
               </svg>
               +38 096 111 11 11</a
@@ -101,62 +84,60 @@
 
       <!--our advantage-->
 
-      <section class="section-advantage section">
+      <section class="advantage section">
         <div class="container">
-          <h2 class="title-hide">Наші принципи</h2>
-          <ul
-            class="flex list-style-none main-section-list main-section-list-card"
-          >
-            <li class="w-270px">
-              <div class="advantage-card mb-30px">
-                <svg class="icon" width="70" height="70">
+          <h2 class="advantage__title--opacity">Наші принципи</h2>
+          <ul class="advantage__list">
+            <li class="advantage__item">
+              <div class="advantage__card">
+                <svg class="advantage__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
 
-              <h2 class="main-section-list-title">УВАГА ДО ДЕТАЛЕЙ</h2>
+              <h2 class="advantage__title">УВАГА ДО ДЕТАЛЕЙ</h2>
 
-              <p class="main-section-list-paragraph">
+              <p class="advantage__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
 
-            <li class="w-270px">
-              <div class="advantage-card mb-30px">
-                <svg class="icon" width="70" height="70">
+            <li class="advantage__item">
+              <div class="advantage__card">
+                <svg class="advantage__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
 
-              <h2 class="main-section-list-title">ПУНКТУАЛЬНІСТЬ</h2>
-              <p class="main-section-list-paragraph">
+              <h2 class="advantage__title">ПУНКТУАЛЬНІСТЬ</h2>
+              <p class="advantage__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
 
-            <li class="w-270px">
-              <div class="advantage-card mb-30px">
-                <svg class="icon" width="70" height="70">
+            <li class="advantage__item">
+              <div class="advantage__card">
+                <svg class="advantage__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
 
-              <h2 class="main-section-list-title">ПЛАНУВАННЯ</h2>
-              <p class="main-section-list-paragraph">
+              <h2 class="advantage__title">ПЛАНУВАННЯ</h2>
+              <p class="advantage__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="w-270px">
-              <div class="advantage-card mb-30px">
-                <svg class="icon" width="70" height="70">
+            <li class="advantage__item">
+              <div class="advantage__card">
+                <svg class="advantage__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
 
-              <h2 class="main-section-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-              <p class="main-section-list-paragraph">
+              <h2 class="advantage__title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+              <p class="advantage__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -556,7 +537,7 @@
     <footer class="footer">
       <div class="container flex gap-70px footer-container">
         <div>
-          <a class="logo" href=""><span class="span-blue">Web</span>Studio </a>
+          <a class="logo" href=""><span class="logo__item">Web</span>Studio </a>
 
           <address class="footer-address">
             <ul class="list-style-none">
